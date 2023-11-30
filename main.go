@@ -10,8 +10,8 @@ import (
 
 // findOccurrences finds and prints the positions of occurrences of subtext in textToSearch
 func findOccurrences(textToSearch, subtext string, positions *string) {
-	textLower := strings.ToLower(textToSearch)
-	subtextLower := strings.ToLower(subtext)
+	var textLower string = strings.ToLower(textToSearch)
+	var subtextLower string = strings.ToLower(subtext)
 
 	var positionsArr []string
 	for i := 0; i < len(textLower); {
